@@ -319,12 +319,14 @@ export default function PortfolioPage() {
                           placeholder="Name" 
                           className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                           required 
+                          disabled
                         />
                         <Input 
                           type="email" 
                           placeholder="Email" 
                           className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                           required 
+                          disabled
                         />
                       </div>
                       <Input 
@@ -332,16 +334,19 @@ export default function PortfolioPage() {
                         placeholder="Subject" 
                         className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                         required 
+                        disabled
                       />
                       <Textarea 
                         placeholder="Message" 
                         className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                         rows={4} 
                         required 
+                        disabled
                       />
                       <Button 
                         type="submit" 
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                        disabled
                       >
                         Send Message
                       </Button>
