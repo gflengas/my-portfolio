@@ -92,10 +92,10 @@ export default function PortfolioPage() {
       link: "https://github.com/gflengas/AtMega16-Othello-game-implementation"
     },
     {
-      title: "Wearable Health Monitor",
+      title: "CPU based on Tomasulo Algorithm",
       description: "Project developed for Advanced Computer Architecture course. We were tasked to create and implement a processor with a dynamic pipeline based on the Tomasulo algorithm using VHDL.",
       technologies: ["VHDL", "FPGA", "Computer Architecture"],
-      link: "https://github.com/yourusername/wearable-health-monitor"
+      link: "https://github.com/gflengas/CPU-based-on-Tomasulo-algorithm"
     }
   ]
 
