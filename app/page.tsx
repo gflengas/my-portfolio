@@ -40,10 +40,38 @@ const MediumLogo = ({ className }: { className?: string }) => (
 export default function PortfolioPage() {
   const [activeTab, setActiveTab] = useState("about")
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    console.log("Form submitted")
-  }
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          subject: formData.get('subject'),
+          message: formData.get('message')
+        })
+      });
+  
+      if (res.ok) {
+        alert('Message sent successfully!');
+        form.reset();
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      alert('Failed to send message. Please try again.');
+    }
+    
+    setIsSubmitting(false);
+  };
 
   const aiMlProjects = [
     {
@@ -315,40 +343,44 @@ export default function PortfolioPage() {
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Input 
+                          name="name"
                           type="text" 
                           placeholder="Name" 
                           className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                           required 
-                          disabled
+                          disabled={isSubmitting}
                         />
                         <Input 
+                          name="email"
                           type="email" 
                           placeholder="Email" 
                           className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                           required 
-                          disabled
+                          disabled={isSubmitting}
                         />
                       </div>
                       <Input 
+                        name="subject"
                         type="text" 
                         placeholder="Subject" 
                         className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                         required 
-                        disabled
+                        disabled={isSubmitting}
                       />
                       <Textarea 
+                        name="message"
                         placeholder="Message" 
                         className="bg-gray-700 text-blue-300 placeholder-gray-500 border-gray-600 focus:border-blue-400 focus:ring-1 focus:ring-blue-400 focus:outline-none" 
                         rows={4} 
                         required 
-                        disabled
+                        disabled={isSubmitting}
                       />
                       <Button 
                         type="submit" 
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white"
-                        disabled
+                        disabled={isSubmitting}
                       >
-                        Send Message
+                        {isSubmitting ? 'Sending...' : 'Send Message'}
                       </Button>
                     </form>
                   </motion.div>
