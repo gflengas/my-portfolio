@@ -133,21 +133,28 @@ export default function PortfolioPage() {
         <TabsList className="grid w-full grid-cols-3 bg-gray-800">
           <TabsTrigger 
             value="about" 
-            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
+            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white py-2 px-4"
           >
             About Me
           </TabsTrigger>
           <TabsTrigger 
             value="ai-ml" 
-            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
+            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white py-2 px-4"
           >
-            AI/ML Projects
+            <div className="flex flex-col sm:flex-row sm:gap-1">
+              <span>AI/ML</span>
+              <span className="hidden sm:inline">/</span>
+              <span>Projects</span>
+            </div>
           </TabsTrigger>
           <TabsTrigger 
             value="hardware" 
-            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
+            className="data-[state=active]:bg-blue-600 data-[state=active]:text-white py-2 px-4"
           >
-            Hardware Projects
+            <div className="flex flex-col sm:flex-row sm:gap-1">
+              <span>Hardware</span>
+              <span>Projects</span>
+            </div>
           </TabsTrigger>
         </TabsList>
         <AnimatePresence mode="wait">
