@@ -163,7 +163,7 @@ export default function PortfolioPage() {
                 <motion.div className="space-y-8 bg-gray-800 p-6 rounded-lg shadow-lg" variants={slideIn}>
                   <div className="flex flex-col md:flex-row gap-6 items-center md:items-start w-full">
                     <Image
-                    src="/images/headshot.jpeg"
+                    src="/images/headshot.png"
                     alt="George Flengas"
                     width={300}
                     height={300}
