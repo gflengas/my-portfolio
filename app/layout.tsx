@@ -14,8 +14,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Georgios Flenga's Portofolio",
-  description: "Personal portfolio of Georgios Flengas, showcasing AI/ML and hardware projects",
+  title: "George Flenga's Portofolio",
+  description: "Personal portfolio of George Flengas, showcasing AI/ML and hardware projects",
+  icons: {
+    icon: '/images/favicon.ico'
+    // or
+    // icon: '/favicon.png', // /public/favicon.png
+  },
 };
 
 export default function RootLayout({
