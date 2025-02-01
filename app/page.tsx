@@ -229,6 +229,23 @@ export default function PortfolioPage() {
                   <motion.div variants={slideIn}>
                     <h2 className="text-2xl font-bold text-blue-400 mb-4">Work Experience</h2>
                     <div className="space-y-6">
+                    <div>
+                        <h3 className="text-lg font-semibold text-gray-200">Freelance Software Engineer</h3>
+                        <p className="text-gray-400">10/2024-Present</p>
+                        <ul className="list-disc list-inside text-gray-400 mt-2">
+                          <li>Manage end-to-end embedded projects from proposal to delivery, developing custom firmware and drivers for ESP32 and STM32 platforms while providing comprehensive documentation, integration guidance, and debugging support to clients.</li>
+                          <li>Expanded skill set into web development, successfully delivering website development contracts.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-200">Machine Learning Research Assistant</h3>
+                        <p className="text-gray-400">MHL, Technical University of Crete, 2/2021-8/2024</p>
+                        <ul className="list-disc list-inside text-gray-400 mt-2">
+                          <li>Designed and implemented complete CNN training and inference pipeline from scratch in C, optimizing for FPGA acceleration on Zynq UltraScale+ MPSoC. Achieved 1.5x speedup over CPUs and 7.8x GPU and 16.55x CPU energy efficiency</li>
+                          <li>Leveraged GEMM operations, He-Initialization, and LeakyReLU to maximize performance, showcasing detailed understanding of neural network math for FPGA-based solutions</li>
+                          <li>Submitted work on FPGA-optimized, energy-efficient CNN acceleration in IEEE Transactions on Circuits and Systems I.</li>
+                        </ul>
+                      </div>
                       <div>
                         <h3 className="text-lg font-semibold text-gray-200">Embedded Software Engineer</h3>
                         <p className="text-gray-400">Cicicom Ltd, 7/2022-11/2023</p>
@@ -246,23 +263,7 @@ export default function PortfolioPage() {
                           <li>Led testing for Gen 2 sensor, creating scripts for automated data processing and boosting productivity.</li>
                         </ul>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-200">Machine Learning Research Assistant</h3>
-                        <p className="text-gray-400">MHL, Technical University of Crete, 2/2021-8/2024</p>
-                        <ul className="list-disc list-inside text-gray-400 mt-2">
-                          <li>Designed and implemented complete CNN training and inference pipeline from scratch in C, optimizing for FPGA acceleration on Zynq UltraScale+ MPSoC. Achieved 1.5x speedup over CPUs and 7.8x GPU and 16.55x CPU energy efficiency</li>
-                          <li>Leveraged GEMM operations, He-Initialization, and LeakyReLU to maximize performance, showcasing detailed understanding of neural network math for FPGA-based solutions</li>
-                          <li>Submitted work on FPGA-optimized, energy-efficient CNN acceleration in IEEE Transactions on Circuits and Systems I.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-200">Freelance Software Engineer</h3>
-                        <p className="text-gray-400">10/2024-Present</p>
-                        <ul className="list-disc list-inside text-gray-400 mt-2">
-                          <li>Manage end-to-end embedded projects from proposal to delivery, developing custom firmware and drivers for ESP32 and STM32 platforms while providing comprehensive documentation, integration guidance, and debugging support to clients.</li>
-                          <li>Expanded skill set into web development, successfully delivering website development contracts.</li>
-                        </ul>
-                      </div>
+                      
                     </div>
                   </motion.div>
 
@@ -277,6 +278,7 @@ export default function PortfolioPage() {
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">C</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">C++</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Python</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Typescript</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Java</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">VHDL</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Assembly MIPS</Badge>
@@ -290,10 +292,12 @@ export default function PortfolioPage() {
                         <h3 className="text-xl font-semibold text-gray-200 mb-2">Software Skills</h3>
                         <div className="flex flex-wrap gap-2">
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Machine Learning</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">LLMs</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Generative AI</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Data Analysis</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">UML</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Design Patterns</Badge>
-                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Unit Testing (Google Test)</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Unit Testing (Google Test, PyTest)</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Git</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">TensorFlow</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">PyTorch</Badge>
@@ -302,10 +306,14 @@ export default function PortfolioPage() {
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">NumPy</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Matplotlib</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Flask</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">RestAPI</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">TailwindCSS</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">NextJS</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">CMake</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Makefile</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">GDB</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">Valgrind</Badge>
+                          <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">HTTP</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">MQTT</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">TCP/IP Stack</Badge>
                           <Badge variant="outline" className="bg-gray-700 text-blue-300 border-blue-300">SSH</Badge>
