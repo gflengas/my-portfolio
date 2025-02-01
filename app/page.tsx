@@ -75,17 +75,18 @@ export default function PortfolioPage() {
 
   const aiMlProjects = [
     {
-      title: "CNN Training in C",
+      title: "Equinox: A C based Machine Learning Framework",
       description: "Developed a C-based framework for Convolutional Neural Network training with He-initialized weights,ReLU activation, maxpooling, fully connected layer, and Softmax for accuracy assessment using Categorical Cross-Entropy Loss. The accuracy achieved is comparable to Keras in both MNIST and CIFAR-10.",
       technologies: ["C", "Machine Learning", "TensorFlow", "CNN"],
       link: "https://github.com/gflengas/CNN-Training-in-C"
     },
-    // {
-    //   title: "End-to-End ML project",
-    //   description: "",
-    //   technologies: ["Python", "NLTK", "GPT-3", "Flask"],
-    //   link: "https://medium.com/@yourusername/building-an-nlp-chatbot"
-    // },
+    {
+      title: "FLUX LoRa training tool (Ongoing)",
+      description: "Developing a web platform that enables users to train custom AI image generation models using their own images. The Flask backend processes image uploads, generates descriptions via XAI’s API, and prepares training data. Training is executed on Replicate’s GPU-powered API, delivering a fine-tuned model to the user. The front-end is built with Next.js (TypeScript) and TailwindCSS, ensuring a sleek and responsive UI.",
+      technologies: ["WebDev", "Typescript", "NextJS", "TailwindCSS", "Flask", "xAI API",
+                    "Replicate Api"],
+      link: "https://github.com/gflengas/FLUX-LoRa-Training-Tool"
+    },
     // {
     //   title: "Local host chatGPT alternative",
     //   description: "",
@@ -143,7 +144,7 @@ export default function PortfolioPage() {
           >
             <div className="flex flex-col sm:flex-row sm:gap-1">
               <span>AI/ML</span>
-              <span className="hidden sm:inline">/</span>
+              <span className="hidden">/</span>
               <span>Projects</span>
             </div>
           </TabsTrigger>
@@ -239,17 +240,27 @@ export default function PortfolioPage() {
                           <li>Contributed to Gen 3 PCB development, adding new features and improving component selection.</li>
                           <li>Established DevOps pipelines with Jenkins and SonarCloud, enhancing workflow and code quality.</li>
                           <li>Developed a LoRaWAN data analytics tool using Pandas, NumPy, and Matplotlib, processing over 1 million payloads from 300+ sensors. This tool was instrumental in securing a major project by identifying critical issues and is now a cornerstone in the company’s monitoring process for all new projects, ensuring ongoing success and reliability.</li>
+                          <li>Led R&D efforts on an innovative fire prevention solution utilizing the BME688 AI-based gas sensor ("digital
+                            nose"), conducting feasibility studies and prototype development to explore new market opportunities.</li>
+                          <li>Mentored junior engineer through structured guidance and problem-solving techniques, facilitating their understanding of the company’s tech stack while fostering independent critical thinking and solution development skills.</li>
                           <li>Led testing for Gen 2 sensor, creating scripts for automated data processing and boosting productivity.</li>
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-200">Research Assistant</h3>
+                        <h3 className="text-lg font-semibold text-gray-200">Machine Learning Research Assistant</h3>
                         <p className="text-gray-400">MHL, Technical University of Crete, 2/2021-8/2024</p>
                         <ul className="list-disc list-inside text-gray-400 mt-2">
-                          <li>Accelerated Convolutional Neural Networks training using FPGAs(Zynq UltraScale+ MPSoC ZCU102). 
-                            Developed a Tensorflow model, replicated it in C++, and integrated into Vitis HLS for Vivado IPs</li>
-                          <li>Achieved 1.5x acceleration over CPU, outperforming GPUs (7.8x) and CPUs (16.55x), 
-                            demonstrating significant improvements in machine learning inference on FPGAs. Paper submitted to IEEE.</li>
+                          <li>Designed and implemented complete CNN training and inference pipeline from scratch in C, optimizing for FPGA acceleration on Zynq UltraScale+ MPSoC. Achieved 1.5x speedup over CPUs and 7.8x GPU and 16.55x CPU energy efficiency</li>
+                          <li>Leveraged GEMM operations, He-Initialization, and LeakyReLU to maximize performance, showcasing detailed understanding of neural network math for FPGA-based solutions</li>
+                          <li>Submitted work on FPGA-optimized, energy-efficient CNN acceleration in IEEE Transactions on Circuits and Systems I.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-200">Freelance Software Engineer</h3>
+                        <p className="text-gray-400">10/2024-Present</p>
+                        <ul className="list-disc list-inside text-gray-400 mt-2">
+                          <li>Manage end-to-end embedded projects from proposal to delivery, developing custom firmware and drivers for ESP32 and STM32 platforms while providing comprehensive documentation, integration guidance, and debugging support to clients.</li>
+                          <li>Expanded skill set into web development, successfully delivering website development contracts.</li>
                         </ul>
                       </div>
                     </div>
