@@ -81,7 +81,7 @@ export default function PortfolioPage() {
       link: "https://github.com/gflengas/CNN-Training-in-C"
     },
     {
-      title: "FLUX LoRa training tool (Ongoing)",
+      title: "FLUX LoRa training tool",
       description: "Developing a web platform that enables users to train custom AI image generation models using their own images. The Flask backend processes image uploads, generates descriptions via XAI’s API, and prepares training data. Training is executed on Replicate’s GPU-powered API, delivering a fine-tuned model to the user. The front-end is built with Next.js (TypeScript) and TailwindCSS, ensuring a sleek and responsive UI.",
       technologies: ["WebDev", "Typescript", "NextJS", "TailwindCSS", "Flask", "xAI API",
                     "Replicate Api"],
